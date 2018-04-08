@@ -1,5 +1,5 @@
-//let image = {image: "https://www.example.com/path/to/image.jpg"};
-let image = {image: "./pacifica.jpg"};
+let image = {image: "https://raw.githubusercontent.com/maverick-zhn/vehicle-recognition-app/master/images/pacifica.jpg"};
+//let image = {image: "./pacifica.jpg"};
 
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 //var xhr = new XMLHttpRequest();
