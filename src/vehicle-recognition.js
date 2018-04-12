@@ -1,5 +1,7 @@
-let image = {image: "https://raw.githubusercontent.com/maverick-zhn/vehicle-recognition-app/master/images/pacifica.jpg"};
+//let image = {image: "https://raw.githubusercontent.com/maverick-zhn/vehicle-recognition-app/master/images/test.png"};
 //let image = {image: "./pacifica.jpg"};
+//let image = {image: "http://www.serviopalacios.com/images/test.png"};
+let image = {image: "http://www.serviopalacios.com/images/pacifica.png"};
 
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 //var xhr = new XMLHttpRequest();
@@ -12,10 +14,10 @@ xmlhttp.onreadystatechange = function () {
         result = xmlhttp.responseText;
         console.log(result);
     }
-}
+};
 
-xmlhttp.open("POST", "https://dev.sighthoundapi.com/v1/recognition?objectType=vehicle,licenseplate");
+xmlhttp.open("POST", "https://dev.sighthoundapi.com/v1/recognition?objectType=vehicle");
 xmlhttp.setRequestHeader("Content-type", "application/json");
-xmlhttp.setRequestHeader("X-Access-Token", "u8zgzmQYsCviN28MRH8n6VMcKmWzCje1xLCa");
+xmlhttp.setRequestHeader("X-Access-Token", "");
 console.log(JSON.stringify(image));
 xmlhttp.send(JSON.stringify(image));
